@@ -15,10 +15,7 @@ app.config["IMAGE_UPLOADS"] = './static'
 @app.route("/market", methods=['GET', 'POST'])
 def f1():
     if request.method == 'POST':
-        return f'Постачальник: ТОВ "Arcana Shop"
-                    Покупець: ({request.form['name']+" "+request.form['surname']})
-                    Договір: {request.form['adress']}
-                    Товар: ({request.form['count']})'
+        return f'Постачальник: ТОВ "Arcana Shop" Покупець: ({request.form['name']+" "+request.form['surname']}) Договір: {request.form['adress']} Товар: ({request.form['count']})'
     return render_template('index.html')
 
 @app.route("/post", methods=['GET', 'POST'])
