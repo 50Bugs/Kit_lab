@@ -1,0 +1,82 @@
+body {
+  background-color: #000000;
+  background-size: cover;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.3em;
+  color: white;
+  height: 100%;
+}
+
+.module {
+  clip-path:
+    polygon(
+      0 0,
+      0 100%,
+      100% 100%,
+      100% 45px,
+      316.5px 0
+    );
+}
+
+
+
+div#block{
+  left: 35px;
+  height: 180px;
+  position: relative;
+  position: relative;
+  width: 105%;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  border: solid #ffffff 1px;
+}
+
+div#block:after{
+  content: '';
+  position: absolute;
+  width: 1100%; height: 1100%;
+  top: 20px; right: -500%;
+  background: rgba(0,0,0,1);
+  border: solid #ffffff 1px;
+  transform-origin: 54% 0;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+div#c{
+  left: 35px;
+  height: 370px;
+  position: relative;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  border-radius: 3px 3px 3px 0px;
+  color: black;
+}
+
+div#c:after{
+  content: '';
+  position: absolute;
+  width: 1100%; height: 1100%;
+  top: 5px; left: -580%;
+  background: linear-gradient(#360167,#E65C9C,#E65C9C,#E65C9C,#E65C9C,#E65C9C,#E65C9C,#E65C9C,#E65C9C);
+  transform-origin: 54% 0;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+footer{
+  background: rgb(255, 255, 0);
+}
+
+#form{
+  background-color: black;
+  border-radius: 50px;
+  width: 40%;
+  position: fixed;
+  left: 30%;
+  top: 40%;
+}
